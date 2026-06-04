@@ -1,0 +1,22 @@
+[
+  {
+    "file": "F:\\大二下专业课\\机器学习\\深度学习课程设计参考文献\\模型微调技术探索\\【NeruIPS 2022】AdaptFormer Adapting Vision Transformers for Scalable Visual Recognition.pdf",
+    "pages": 21,
+    "txt": "F:\\Exploration\\materials\\finetune_pdfs\\NeruIPS_2022_AdaptFormer_Adapting_Vision_Transformers_for_Scalable_Visual_Recognition.txt"
+  },
+  {
+    "file": "F:\\大二下专业课\\机器学习\\深度学习课程设计参考文献\\模型微调技术探索\\【NeruIPS 2022】Scaling & Shifting Your Features A New Baseline for Efficient Model Tuning.pdf",
+    "pages": 20,
+    "txt": "F:\\Exploration\\materials\\finetune_pdfs\\NeruIPS_2022_Scaling_Shifting_Your_Features_A_New_Baseline_for_Efficient_Model_Tuning.txt"
+  },
+  {
+    "file": "F:\\大二下专业课\\机器学习\\深度学习课程设计参考文献\\模型微调技术探索\\LORA LOW-RANK ADAPTATION OF LARGE LANGUAGE MODELS.pdf",
+    "pages": 26,
+    "txt": "F:\\Exploration\\materials\\finetune_pdfs\\LORA_LOW_RANK_ADAPTATION_OF_LARGE_LANGUAGE_MODELS.txt"
+  },
+  {
+    "file": "F:\\大二下专业课\\机器学习\\深度学习课程设计参考文献\\模型微调技术探索\\【ACL 2022】BitFit Simple Parameter-efficient Fine-tuning for Transformer-based Masked Language-models.pdf",
+    "pages": 9,
+    "txt": "F:\\Exploration\\materials\\finetune_pdfs\\ACL_2022_BitFit_Simple_Parameter_efficient_Fine_tuning_for_Transformer_based_Masked_Language_models.txt"
+  }
+]

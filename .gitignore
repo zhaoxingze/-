@@ -1,0 +1,41 @@
+# Large reproducible assets
+data/
+models/
+
+# Earlier artifacts from the discarded SAM/ESAM topic
+materials/1_SHARPNESS_AWARE_MINIMIZATION_FOR_EFFICIENTLY*
+materials/2_ESAM*
+materials/pdf_index.json
+materials/ppt_text.json
+materials/ppt_text.txt
+outputs/experiment_config.json
+outputs/final_*
+outputs/seed_results.csv
+outputs/summary_results.csv
+outputs/training_curves.png
+outputs/training_history.csv
+outputs/tuning_best.csv
+outputs/tuning_results.csv
+src/run_final_tuned_experiment.py
+src/run_sam_experiment.py
+src/tune_sam_experiment.py
+tools/build_report_docx.py
+tools/extract_sources.py
+tools/render_docx_workspace.py
+
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs and temporary render outputs
+*.log
+outputs/tmp/
+outputs/docx_render*/
+~$*.docx
+
+# Local editor/system files
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
