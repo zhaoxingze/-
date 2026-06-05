@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import torch
 import torch.nn.functional as F
+from tqdm.auto import tqdm
 
 from dataset import make_loaders
 from models.resnet_finetune import build_resnet_finetune
@@ -77,9 +78,20 @@ def train_one_method(
 
     history: list[dict[str, Any]] = []
     start = time.perf_counter()
-    for epoch in range(1, int(train_cfg.get("epochs", 4)) + 1):
+    epochs = int(train_cfg.get("epochs", 15))
+    epoch_iter = tqdm(
+        range(1, epochs + 1),
+        desc=f"{config['experiment_id']} {method} seed={seed}",
+        leave=False,
+    )
+    for epoch in epoch_iter:
         model.train()
-        for x, y in train_loader:
+        batch_iter = tqdm(
+            train_loader,
+            desc=f"epoch {epoch}/{epochs}",
+            leave=False,
+        )
+        for x, y in batch_iter:
             x = x.to(device, non_blocking=True)
             y = y.to(device, non_blocking=True)
             optimizer.zero_grad(set_to_none=True)
@@ -88,8 +100,10 @@ def train_one_method(
             scaler.scale(loss).backward()
             scaler.step(optimizer)
             scaler.update()
+            batch_iter.set_postfix(loss=f"{float(loss.detach().cpu()):.4f}")
 
         test_loss, test_acc = evaluate_model(model, test_loader, device)
+        epoch_iter.set_postfix(test_acc=f"{test_acc:.4f}")
         history.append(
             {
                 "experiment_id": config["experiment_id"],

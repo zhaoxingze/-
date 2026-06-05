@@ -15,7 +15,7 @@ model:
   backbone: resnet18_imagenet
   unfrozen_layers: [layer4, classifier]
 training:
-  epochs: 4
+  epochs: 15
   batch_size: 128
   lr_head: 0.002
   lr_full: 0.00005

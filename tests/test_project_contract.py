@@ -42,6 +42,8 @@ class ProjectContractTests(unittest.TestCase):
             "E8",
             "LoRA",
             "Adapter",
+            "15 个 epoch",
+            "tqdm",
         ]
         for phrase in required_phrases:
             with self.subTest(phrase=phrase):
@@ -72,6 +74,21 @@ class ProjectContractTests(unittest.TestCase):
 
         self.assertIn("-- LINEAR", line)
         self.assertIn("acc= 71.30%", line)
+
+    def test_training_configs_use_fifteen_epochs(self):
+        from utils import load_config
+
+        for config_path in sorted((ROOT / "configs").glob("*.yaml")):
+            with self.subTest(config=config_path.name):
+                config = load_config(config_path)
+                self.assertEqual(config["training"]["epochs"], 15)
+
+    def test_training_script_exposes_progress_bars(self):
+        source = (ROOT / "train.py").read_text(encoding="utf-8")
+
+        self.assertIn("from tqdm.auto import tqdm", source)
+        self.assertIn('desc=f"{config[\'experiment_id\']} {method} seed={seed}"', source)
+        self.assertIn("leave=False", source)
 
 
 if __name__ == "__main__":

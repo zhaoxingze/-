@@ -2,10 +2,10 @@
   {
     "experiment_id": "E1",
     "method": "linear_probe",
-    "test_acc_mean": 0.713,
-    "test_acc_std": 0.0184,
-    "test_loss_mean": 0.9394,
-    "time_sec_mean": 9.49,
+    "test_acc_mean": 0.743,
+    "test_acc_std": 0.0071,
+    "test_loss_mean": 0.7858,
+    "time_sec_mean": 33.33,
     "trainable_params": 5130,
     "total_params": 11181642,
     "trainable_percent": 0.0459
@@ -13,10 +13,10 @@
   {
     "experiment_id": "E2",
     "method": "partial_ft",
-    "test_acc_mean": 0.7715,
-    "test_acc_std": 0.0007,
-    "test_loss_mean": 0.8802,
-    "time_sec_mean": 7.72,
+    "test_acc_mean": 0.7855,
+    "test_acc_std": 0.0148,
+    "test_loss_mean": 0.8937,
+    "time_sec_mean": 33.49,
     "trainable_params": 8398858,
     "total_params": 11181642,
     "trainable_percent": 75.1129
@@ -24,10 +24,10 @@
   {
     "experiment_id": "E3",
     "method": "full_ft",
-    "test_acc_mean": 0.7305,
-    "test_acc_std": 0.0219,
-    "test_loss_mean": 0.8947,
-    "time_sec_mean": 8.04,
+    "test_acc_mean": 0.8085,
+    "test_acc_std": 0.0163,
+    "test_loss_mean": 0.5831,
+    "time_sec_mean": 38.19,
     "trainable_params": 11181642,
     "total_params": 11181642,
     "trainable_percent": 100.0
@@ -35,10 +35,10 @@
   {
     "experiment_id": "E4",
     "method": "ssf_all",
-    "test_acc_mean": 0.7335,
-    "test_acc_std": 0.0078,
-    "test_loss_mean": 0.8295,
-    "time_sec_mean": 8.15,
+    "test_acc_mean": 0.784,
+    "test_acc_std": 0.0099,
+    "test_loss_mean": 0.6674,
+    "time_sec_mean": 34.89,
     "trainable_params": 8074,
     "total_params": 11184586,
     "trainable_percent": 0.0722
@@ -46,10 +46,10 @@
   {
     "experiment_id": "E5",
     "method": "ssf_l4",
-    "test_acc_mean": 0.713,
-    "test_acc_std": 0.017,
-    "test_loss_mean": 0.9277,
-    "time_sec_mean": 7.97,
+    "test_acc_mean": 0.7475,
+    "test_acc_std": 0.0092,
+    "test_loss_mean": 0.7866,
+    "time_sec_mean": 35.18,
     "trainable_params": 7178,
     "total_params": 11183690,
     "trainable_percent": 0.0642
@@ -57,10 +57,10 @@
   {
     "experiment_id": "E6",
     "method": "ssf_l34",
-    "test_acc_mean": 0.731,
-    "test_acc_std": 0.0198,
-    "test_loss_mean": 0.8662,
-    "time_sec_mean": 8.13,
+    "test_acc_mean": 0.7685,
+    "test_acc_std": 0.0064,
+    "test_loss_mean": 0.7145,
+    "time_sec_mean": 35.52,
     "trainable_params": 7690,
     "total_params": 11184202,
     "trainable_percent": 0.0688
@@ -68,10 +68,10 @@
   {
     "experiment_id": "E7",
     "method": "full_ft",
-    "test_acc_mean": 0.379,
-    "test_acc_std": 0.0283,
-    "test_loss_mean": 1.8171,
-    "time_sec_mean": 5.55,
+    "test_acc_mean": 0.649,
+    "test_acc_std": 0.0509,
+    "test_loss_mean": 1.1649,
+    "time_sec_mean": 22.82,
     "trainable_params": 11181642,
     "total_params": 11181642,
     "trainable_percent": 100.0
@@ -79,10 +79,10 @@
   {
     "experiment_id": "E7",
     "method": "linear_probe",
-    "test_acc_mean": 0.464,
-    "test_acc_std": 0.0453,
-    "test_loss_mean": 1.5882,
-    "time_sec_mean": 5.62,
+    "test_acc_mean": 0.6535,
+    "test_acc_std": 0.0134,
+    "test_loss_mean": 1.0472,
+    "time_sec_mean": 22.27,
     "trainable_params": 5130,
     "total_params": 11181642,
     "trainable_percent": 0.0459
@@ -90,10 +90,10 @@
   {
     "experiment_id": "E7",
     "method": "partial_ft",
-    "test_acc_mean": 0.5605,
-    "test_acc_std": 0.0262,
-    "test_loss_mean": 3.1316,
-    "time_sec_mean": 5.46,
+    "test_acc_mean": 0.69,
+    "test_acc_std": 0.0297,
+    "test_loss_mean": 1.4658,
+    "time_sec_mean": 21.58,
     "trainable_params": 8398858,
     "total_params": 11181642,
     "trainable_percent": 75.1129
@@ -101,10 +101,10 @@
   {
     "experiment_id": "E7",
     "method": "ssf_all",
-    "test_acc_mean": 0.475,
-    "test_acc_std": 0.0481,
-    "test_loss_mean": 1.5675,
-    "time_sec_mean": 5.68,
+    "test_acc_mean": 0.6705,
+    "test_acc_std": 0.0163,
+    "test_loss_mean": 0.9856,
+    "time_sec_mean": 22.13,
     "trainable_params": 8074,
     "total_params": 11184586,
     "trainable_percent": 0.0722
@@ -112,10 +112,10 @@
   {
     "experiment_id": "E8",
     "method": "full_ft",
-    "test_acc_mean": 0.577,
-    "test_acc_std": 0.0354,
-    "test_loss_mean": 1.3508,
-    "time_sec_mean": 5.98,
+    "test_acc_mean": 0.757,
+    "test_acc_std": 0.0311,
+    "test_loss_mean": 0.7737,
+    "time_sec_mean": 27.67,
     "trainable_params": 11181642,
     "total_params": 11181642,
     "trainable_percent": 100.0
@@ -123,10 +123,10 @@
   {
     "experiment_id": "E8",
     "method": "linear_probe",
-    "test_acc_mean": 0.6355,
-    "test_acc_std": 0.0389,
-    "test_loss_mean": 1.2265,
-    "time_sec_mean": 7.21,
+    "test_acc_mean": 0.7265,
+    "test_acc_std": 0.0021,
+    "test_loss_mean": 0.853,
+    "time_sec_mean": 26.21,
     "trainable_params": 5130,
     "total_params": 11181642,
     "trainable_percent": 0.0459
@@ -134,10 +134,10 @@
   {
     "experiment_id": "E8",
     "method": "partial_ft",
-    "test_acc_mean": 0.6775,
-    "test_acc_std": 0.0064,
-    "test_loss_mean": 2.0647,
-    "time_sec_mean": 5.66,
+    "test_acc_mean": 0.753,
+    "test_acc_std": 0.0085,
+    "test_loss_mean": 0.9559,
+    "time_sec_mean": 26.41,
     "trainable_params": 8398858,
     "total_params": 11181642,
     "trainable_percent": 75.1129
@@ -145,10 +145,10 @@
   {
     "experiment_id": "E8",
     "method": "ssf_all",
-    "test_acc_mean": 0.6415,
-    "test_acc_std": 0.0361,
-    "test_loss_mean": 1.154,
-    "time_sec_mean": 6.6,
+    "test_acc_mean": 0.7525,
+    "test_acc_std": 0.0035,
+    "test_loss_mean": 0.7372,
+    "time_sec_mean": 33.41,
     "trainable_params": 8074,
     "total_params": 11184586,
     "trainable_percent": 0.0722
@@ -156,10 +156,10 @@
   {
     "experiment_id": "X1",
     "method": "lora",
-    "test_acc_mean": 0.143,
-    "test_acc_std": 0.0467,
-    "test_loss_mean": 2.3354,
-    "time_sec_mean": 8.9,
+    "test_acc_mean": 0.356,
+    "test_acc_std": 0.1711,
+    "test_loss_mean": 1.6599,
+    "time_sec_mean": 44.17,
     "trainable_params": 4186,
     "total_params": 11185818,
     "trainable_percent": 0.0374
@@ -167,10 +167,10 @@
   {
     "experiment_id": "X2",
     "method": "adapter",
-    "test_acc_mean": 0.714,
-    "test_acc_std": 0.0085,
-    "test_loss_mean": 0.8501,
-    "time_sec_mean": 8.3,
+    "test_acc_mean": 0.7135,
+    "test_acc_std": 0.0049,
+    "test_loss_mean": 1.0354,
+    "time_sec_mean": 44.41,
     "trainable_params": 71242,
     "total_params": 11247754,
     "trainable_percent": 0.6334

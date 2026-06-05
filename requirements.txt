@@ -4,3 +4,4 @@ numpy
 matplotlib
 PyYAML
 python-docx
+tqdm
