@@ -1,0 +1,23 @@
+experiment_id: E5
+name: SSF-L4
+method: ssf_l4
+purpose: 研究只调整最高层特征时的效果，只在 layer4 后加入 SSF 参数。
+data:
+  dataset: CIFAR-10
+  root: data
+  train_per_class: 100
+  test_per_class: 100
+  train_fraction: 1.0
+  image_size: 128
+  download: false
+  num_workers: 0
+model:
+  backbone: resnet18_imagenet
+  ssf_layers: [layer4]
+training:
+  epochs: 4
+  batch_size: 128
+  lr_head: 0.002
+  lr_full: 0.00005
+  weight_decay: 0.0001
+  seeds: [2026, 2027]

@@ -1,0 +1,23 @@
+experiment_id: E4
+name: SSF-All
+method: ssf_all
+purpose: 高效微调核心实验，在 ResNet18 多个 stage 后学习特征缩放和平移参数。
+data:
+  dataset: CIFAR-10
+  root: data
+  train_per_class: 100
+  test_per_class: 100
+  train_fraction: 1.0
+  image_size: 128
+  download: false
+  num_workers: 0
+model:
+  backbone: resnet18_imagenet
+  ssf_layers: [layer1, layer2, layer3, layer4]
+training:
+  epochs: 4
+  batch_size: 128
+  lr_head: 0.002
+  lr_full: 0.00005
+  weight_decay: 0.0001
+  seeds: [2026, 2027]

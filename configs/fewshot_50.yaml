@@ -1,0 +1,24 @@
+experiment_id: E8
+name: Few-shot 50%
+method: fewshot_50
+methods: [linear_probe, partial_ft, full_ft, ssf_all]
+purpose: 小样本 50% 数据训练，分析数据量变化对主体方法的影响。
+data:
+  dataset: CIFAR-10
+  root: data
+  train_per_class: 100
+  test_per_class: 100
+  train_fraction: 0.50
+  image_size: 128
+  download: false
+  num_workers: 0
+model:
+  backbone: resnet18_imagenet
+  ssf_layers: [layer1, layer2, layer3, layer4]
+training:
+  epochs: 4
+  batch_size: 128
+  lr_head: 0.002
+  lr_full: 0.00005
+  weight_decay: 0.0001
+  seeds: [2026, 2027]
